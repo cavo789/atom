@@ -2,7 +2,7 @@
 
 > My atom's configuration files
 
-Because it takes hours to write them :wink:
+Because it takes hours to write them :wink: :gift:
 
 ## Table of Contents
 
@@ -34,4 +34,4 @@ PRs not accepted.
 
 ## License
 
-[MIT](../LICENSE)
+[MIT](LICENSE)
