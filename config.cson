@@ -237,22 +237,7 @@
     ]
     locales: [
       "fr-FR"
-    ]
-  "sync-settings":
-    _lastBackupHash: "e9d71ef1ba648c5ecb43baec1592b74a56f27bc8"
-    blacklistedKeys: [
-      "linter-php"
-    ]
-    extraFiles: [
-      "config.cson"
-      "projects.cson"
-      "snippets.cson"
-      "styles.less"
-    ]
-    gistId: "b748b08a2ad94f51ac4a4fc2864b0b04"
-    personalAccessToken: "63b17201e706fa2e8028bb9643cb0fede27f17a8"
-    syncInit: false
-    syncStyles: false
+    ]  
   "todo-show":
     ignoreThesePaths: [
       "node_modules"
