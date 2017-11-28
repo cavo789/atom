@@ -12,9 +12,11 @@ Because it takes hours to write them :wink: :gift:
 
 ## Install
 
-Copy this file to your `%USERPROFILE%\.atom` folder; overwrite (or append) your current `init.coffee` file by this one.
+Copy the desired file to your `%USERPROFILE%\.atom` folder; overwrite (or append) your current existing file (f.i. `init.coffee`) file by this one.
 
 ## Usage
+
+### init.coffee
 
 * When a file will be saved
 	* For all text files
@@ -27,6 +29,14 @@ these unneeded characters
 	* Only for VBS
 		* Replace some keywords, solve typo issue (f.i. replace `WScript.Echo`
 by `wScript.echo` so files will be a few normalized)
+
+### snippets.cson
+
+List of snippets (i.e. abbreviations) that I use when I'm coding in PHP, markdown, vbs, ...
+
+### styles.less
+
+My own stylesheet for atom. Most probably useless for you.
 
 ## Contribute
 

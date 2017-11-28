@@ -1,0 +1,79 @@
+# Your snippets
+'.source.php':
+	'LOG':
+		'prefix': 'debug'
+		'body': """
+			/*<!-- build:debug -->*/
+			if ($aeSettings->getDebugMode()) {
+				$aeDebug = \\MarkNotes\\Debug::getInstance();
+				$aeDebug->log("$1","debug");
+			}
+			/*<!-- endbuild -->*/
+		"""
+	'FILE_LINE':
+		'prefix': 'here'
+		'body': """
+			/*<!-- build:debug -->*/
+			$aeDebug = \\MarkNotes\\Debug::getInstance();
+			$aeDebug->here("$1", 10);
+			/*<!-- endbuild -->*/
+		"""
+	'Styled var_dump':
+		'prefix': 'vardumper'
+		'body': """
+			/*<!-- build:debug -->*/
+			die("<pre style=\'background-color:yellow;\'>".__FILE__." - ".__LINE__." ".print_r($1,  true)."</pre>");
+			/*<!-- endbuild -->*/
+		"""
+	'Styled line':
+		'prefix': 'died'
+		'body': """
+			/*<!-- build:debug -->*/
+			die("<h1>Died in ".__FILE__.", line ".__LINE__." : $1</h1>");
+			/*<!-- endbuild -->*/
+		"""
+	'output HTML':
+		'prefix': 'html'
+		'body': """
+			/*<!-- build:debug -->*/
+			echo ("<pre style=\'background-color:yellow;\'>".__FILE__." - ".__LINE__.PHP_EOL.str_replace(\'<\',\'&lt;\',trim($1))."</pre>");
+			/*<!-- endbuild -->*/
+		"""
+'.source.asp.vb.net':
+	'echo':
+		'prefix': 'echo'
+		'body': 'wScript.echo "$1"'
+'.text.md':
+	'readme':
+		'prefix': 'readme'
+		'body': """
+# Project Name
+
+> Quick TD;LR
+
+Description
+
+## Table of Contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [License](#license)
+
+## Install
+
+## Usage
+
+## Contribute
+
+PRs not accepted.
+
+## License
+
+[MIT](LICENSE)
+	"""
+	'Image Link':
+		'prefix': 'img'
+		'body': '![$1](%URL%.images/$1)'
+	'Hyperlink':
+		'prefix': 'link'
+		'body': '[$1]($2)'

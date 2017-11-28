@@ -1,0 +1,307 @@
+"*":
+  "atom-autocomplete-php":
+    binComposer: "C:\\ProgramData\\ComposerSetup\\bin\\composer.phar"
+    binPhp: "C:\\Christophe\\Tools\\wamp64\\bin\\php\\php7.0.10\\php.exe"
+    verboseErrors: true
+  "atom-beautify":
+    apex:
+      disabled: true
+    arduino:
+      disabled: true
+    bash:
+      beautify_on_save: true
+    c:
+      disabled: true
+    cfml:
+      disabled: true
+    clj:
+      disabled: true
+    coffeescript:
+      disabled: true
+    cpp:
+      disabled: true
+    crystal:
+      disabled: true
+    cs:
+      disabled: true
+    css:
+      align_assignments: true
+      beautify_on_save: true
+      convert_quotes: "single"
+      default_beautifier: "Pretty Diff"
+      end_with_newline: true
+      no_lead_zero: true
+    csv:
+      beautify_on_save: true
+    d:
+      disabled: true
+    executables:
+      "php-cs-fixer":
+        path: "C:\\Users\\Avonture_christophe\\AppData\\Roaming\\Composer\\vendor\\bin\\"
+      phpcbf:
+        path: "C:\\Users\\Avonture_christophe\\AppData\\Roaming\\Composer\\vendor\\bin\\"
+    general:
+      analytics: false
+      loggerLevel: "error"
+      muteAllErrors: true
+      muteUnsupportedLanguageErrors: true
+    html:
+      beautify_on_save: true
+      end_with_newline: true
+      indent_inner_html: true
+    js:
+      beautify_on_save: true
+      break_chained_methods: true
+      end_with_newline: true
+      indent_with_tabs: true
+      jslint_happy: true
+      space_after_anon_function: true
+    json:
+      beautify_on_save: true
+      end_with_newline: true
+      indent_with_tabs: true
+    markdown:
+      beautify_on_save: true
+      default_beautifier: "Remark"
+      disabled: true
+      yaml: false
+    php:
+      beautify_on_save: true
+      cs_fixer_config_file: "C:\\Christophe\\Repository\\.php_cs"
+      fixers: "linefeed, indentation"
+      standard: "PSR2"
+    sql:
+      beautify_on_save: true
+    xml:
+      beautify_on_save: true
+      default_beautifier: "JS Beautify"
+      end_with_newline: true
+  "autocomplete-php":
+    executablePath: "C:\\Christophe\\Tools\\wamp64\\bin\\php\\php7.0.10\\php.exe"
+  "bracket-matcher":
+    autocompleteBrackets: false
+  core:
+    closeDeletedFileTabs: true
+    customFileTypes:
+      "source.asp.vb.net": [
+        "vbs"
+      ]
+      "source.css": [
+        "css.dist"
+      ]
+      "source.htaccess": [
+        "htaccess.txt"
+      ]
+      "source.javascript": [
+        "js.dist"
+      ]
+      "source.json": [
+        "json.dist"
+      ]
+    disabledPackages: [
+      "language-gfm"
+      "language-todo"
+      "emmet"
+      "markdown-preview"
+      "autocomplete-php"
+      "language-c"
+      "language-clojure"
+      "language-csharp"
+      "language-go"
+      "language-java"
+      "language-make"
+      "language-mustache"
+      "language-objective-c"
+      "language-perl"
+      "language-python"
+      "language-ruby"
+      "language-ruby-on-rails"
+      "language-sass"
+      "language-toml"
+      "language-yaml"
+      "about"
+      "github"
+      "markdown-scroll-sync"
+      "linter-xmllint"
+      "linter-ui-default"
+      "linter-tidy"
+      "linter-scss-lint"
+      "linter-markdown"
+      "linter-json-lint"
+      "linter-jshint"
+      "linter-js-yaml"
+      "linter-htmlhint"
+      "linter-csslint"
+      "linter-bootlint"
+      "php-cs-fixer"
+      "atom-autocomplete-php"
+      "whitespace"
+      "hyperclick"
+      "js-hyperclick"
+      "php-hyperclick"
+      "linter"
+      "atom-beautify"
+    ]
+    packagesWithKeymapsDisabled: [
+      "atom-beautify"
+      "goto-definition"
+      "docblockr"
+      "highlight-selected"
+    ]
+    projectHome: "C:\\Christophe\\Repository"
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "atom-dark-syntax"
+    ]
+  distphp:
+    autoloadPaths: [
+      "libs/autoload.php"
+      "autoload.php"
+    ]
+    binComposer: "C:\\ProgramData\\ComposerSetup\\bin\\composer.phar"
+    binPhp: "C:\\Christophe\\Tools\\wamp64\\bin\\php\\php7.0.10\\php.exe"
+  docblockr:
+    auto_add_method_tag: true
+    deep_indent: true
+    development_mode: false
+  editor:
+    fontSize: 24
+    invisibles: {}
+    preferredLineLength: 120
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+    tabType: "auto"
+  "exception-reporting":
+    userId: "d8d047f3-a840-4894-95a4-b23910959ad5"
+  "file-icons":
+    onChanges: true
+  "fold-functions": {}
+  "goto-definition":
+    contextMenuDisplayAtFirst: false
+  "highlight-selected":
+    ignoreCase: true
+  "line-ending-selector":
+    defaultLineEnding: "LF"
+  "linter-markdown":
+    detectIgnore: false
+    presetConsistentWithoutConfig: false
+    presetRecommendedWithoutConfig: false
+  "linter-php":
+    executablePath: "C:\\Christophe\\Tools\\wamp64\\bin\\php\\php7.0.10\\php.exe"
+  "linter-phpcs":
+    autoConfigSearch: false
+    autoExecutableSearch: false
+    codeStandardOrConfigFile: "C:\\Christophe\\Repository\\ruleset.xml"
+    executablePath: "C:\\Christophe\\Repository\\devtools\\PHP_CodeSniffer\\bin\\phpcs.bat"
+    tabWidth: 4
+  "linter-phpmd":
+    executablePath: "C:\\Christophe\\Repository\\devtools\\phpmd\\src\\bin\\phpmd"
+    rulesets: "codesize,unusedcode,naming,design,cleancode,controversial"
+  "linter-tidy":
+    executablePath: "C:\\Christophe\\Tools\\htmlTidy\\tidy.exe"
+  "linter-ui-default":
+    panelHeight: 65.21875
+    showPanel: true
+    showProviderName: true
+    useBusySignal: false
+  "linter-xmllint":
+    executablePath: "C:\\Christophe\\Repository\\devtools\\xmllint\\bin\\xmllint"
+  "markdown-preview-plus":
+    useGitHubStyle: true
+  "markdown-writer":
+    fileExtension: ".markdown .md"
+    relativeImagePath: true
+  minimap:
+    plugins:
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
+  "php-cs-fixer":
+    executablePath: "C:\\Users\\Avonture_christophe\\AppData\\Roaming\\Composer\\vendor\\bin\\"
+    executeOnSave: true
+    phpExecutablePath: "C:\\Christophe\\Tools\\wamp64\\bin\\php\\php7.0.10\\php.exe"
+    rules: "@PSR2,binary_operator_spaces,indentation_type,line_ending"
+    showInfoNotifications: true
+  "php-integrator-base":
+    phpCommand: "C:\\Christophe\\Tools\\wamp64\\bin\\php\\php7.0.10\\php.exe"
+  "seti-ui":
+    compactView: true
+    themeColor: "Steel"
+  "spell-check":
+    grammars: [
+      "source.markdown"
+      "text.plain"
+      "text.md"
+    ]
+    locales: [
+      "fr-FR"
+    ]
+  "sync-settings":
+    _lastBackupHash: "e9d71ef1ba648c5ecb43baec1592b74a56f27bc8"
+    blacklistedKeys: [
+      "linter-php"
+    ]
+    extraFiles: [
+      "config.cson"
+      "projects.cson"
+      "snippets.cson"
+      "styles.less"
+    ]
+    gistId: "b748b08a2ad94f51ac4a4fc2864b0b04"
+    personalAccessToken: "63b17201e706fa2e8028bb9643cb0fede27f17a8"
+    syncInit: false
+    syncStyles: false
+  "todo-show":
+    ignoreThesePaths: [
+      "node_modules"
+      "vendor"
+      "bower_components"
+      "libs"
+    ]
+    saveOutputAs: "Table"
+    statusBarIndicator: true
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ensureSingleTrailingNewline: false
+".basic.html.text":
+  editor:
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    softWrapHangingIndent: 2
+".css.source":
+  editor:
+    tabLength: 4
+".editorconfig.source":
+  editor:
+    softWrapAtPreferredLineLength: true
+".js.regexp.replacement.source":
+  editor:
+    tabLength: 4
+".js.regexp.source":
+  editor:
+    tabLength: 4
+".js.source":
+  editor:
+    tabLength: 4
+".md.text":
+  editor:
+    showIndentGuide: false
+    softWrapAtPreferredLineLength: true
+    softWrapHangingIndent: 120
+".source.vbs":
+  editor:
+    showInvisibles: true
+    softWrapAtPreferredLineLength: true
+".text.todo":
+  editor:
+    scrollPastEnd: false
+    showInvisibles: true
+".text.xml":
+  editor:
+    softWrapAtPreferredLineLength: true
