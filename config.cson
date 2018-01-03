@@ -154,6 +154,7 @@
       "one-dark-ui"
       "atom-dark-syntax"
     ]
+    uriHandlerRegistration: "always"
   distphp:
     autoloadPaths: [
       "libs/autoload.php"
@@ -166,7 +167,7 @@
     deep_indent: true
     development_mode: false
   editor:
-    fontSize: 24
+    fontSize: 26
     invisibles: {}
     preferredLineLength: 70
     showIndentGuide: true

@@ -33,7 +33,7 @@
 targetEolFormat = "\n"
 {Range, Point} = require 'atom'
 
-atom.workspace.observeTextEditors (editor) ->
+DDDDatom.workspace.observeTextEditors (editor) ->
 
 	editor.buffer.onWillSave ->
 
@@ -43,12 +43,12 @@ atom.workspace.observeTextEditors (editor) ->
 		# Inform the user about this script
 		atom.notifications.addInfo 'init.coffee - CAVO linting', icon: 'pencil'
 
-		# Convert CFLF to LF 
+		# Convert CFLF to LF
 		# https://discuss.atom.io/t/can-newlines-be-configured-eg-r-n-or-n/13122/3
 		lastRowIndex = editor.buffer.getLastRow()
 		editor.buffer.transact ->
 
-			atom.notifications.addInfo "init.coffee - CAVO linting - Convert to LF", icon: 'pencil'		
+			atom.notifications.addInfo "init.coffee - CAVO linting - Convert to LF", icon: 'pencil'
 			for rowIndex in [0...lastRowIndex]
 				currEol = editor.buffer.lineEndingForRow rowIndex
 				if currEol isnt targetEolFormat
