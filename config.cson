@@ -1,4 +1,12 @@
 "*":
+  MarkdownDocument:
+    enableAutoSave: "true"
+    markdownScopes: [
+      "source.gfm"
+      "text.md"
+      "text.plain"
+      "text.plain.null-grammar"
+    ]
   "atom-autocomplete-php":
     binComposer: "C:\\ProgramData\\ComposerSetup\\bin\\composer.phar"
     binPhp: "C:\\Christophe\\Tools\\wamp64\\bin\\php\\php7.0.10\\php.exe"
@@ -102,7 +110,6 @@
       "language-gfm"
       "language-todo"
       "emmet"
-      "markdown-preview"
       "autocomplete-php"
       "language-c"
       "language-clojure"
@@ -141,6 +148,10 @@
       "php-hyperclick"
       "linter"
       "atom-beautify"
+      "markdown-document"
+      "markdown-writer"
+      "markdown-preview"
+      "markdown-preview-plus"
     ]
     packagesWithKeymapsDisabled: [
       "atom-beautify"
@@ -154,6 +165,7 @@
       "one-dark-ui"
       "atom-dark-syntax"
     ]
+    uriHandlerRegistration: "always"
   distphp:
     autoloadPaths: [
       "libs/autoload.php"
@@ -168,7 +180,7 @@
   editor:
     fontSize: 24
     invisibles: {}
-    preferredLineLength: 120
+    preferredLineLength: 70
     showIndentGuide: true
     showInvisibles: true
     softWrap: true
@@ -214,6 +226,8 @@
   "markdown-writer":
     fileExtension: ".markdown .md"
     relativeImagePath: true
+    siteImagesDir: ".images/"
+    siteUrl: "http://localhost:8080/notes/"
   minimap:
     plugins:
       "highlight-selected": true
@@ -237,7 +251,7 @@
     ]
     locales: [
       "fr-FR"
-    ]  
+    ]
   "todo-show":
     ignoreThesePaths: [
       "node_modules"
@@ -264,6 +278,11 @@
     tabLength: 4
 ".editorconfig.source":
   editor:
+    softWrapAtPreferredLineLength: true
+".html.php.text":
+  editor:
+    autoIndent: true
+    autoIndentOnPaste: true
     softWrapAtPreferredLineLength: true
 ".js.regexp.replacement.source":
   editor:
