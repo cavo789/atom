@@ -178,7 +178,7 @@
     deep_indent: true
     development_mode: false
   editor:
-    fontSize: 24
+    fontSize: 26
     invisibles: {}
     preferredLineLength: 70
     showIndentGuide: true
@@ -211,7 +211,6 @@
     tabWidth: 4
   "linter-phpmd":
     executablePath: "C:\\Christophe\\Repository\\devtools\\phpmd\\src\\bin\\phpmd"
-    rulesets: "codesize,unusedcode,naming,design,cleancode,controversial"
   "linter-tidy":
     executablePath: "C:\\Christophe\\Tools\\htmlTidy\\tidy.exe"
   "linter-ui-default":

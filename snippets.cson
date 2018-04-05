@@ -5,7 +5,7 @@
 		'body': """
 			/*<!-- build:debug -->*/
 			if ($aeSettings->getDebugMode()) {
-				$aeDebug = \\MarkNotes\\Debug::getInstance();
+				$aeDebug = \\\\MarkNotes\\\\Debug::getInstance();
 				$aeDebug->log("$1","debug");
 			}
 			/*<!-- endbuild -->*/
@@ -14,10 +14,55 @@
 		'prefix': 'here'
 		'body': """
 			/*<!-- build:debug -->*/
-			$aeDebug = \\MarkNotes\\Debug::getInstance();
-			$aeDebug->here("$1", 10);
+			$aeDebug = \\\\MarkNotes\\\\Debug::getInstance();
+			$aeDebug->here("$1", 1);
 			/*<!-- endbuild -->*/
 		"""
+	'aeCache':
+		'prefix': '$aeCache'
+		'body': """
+			$aeCache = \\\\MarkNotes\\\\Cache::getInstance();
+		"""
+	'aeDebug':
+		'prefix': '$aeDebug'
+		'body': """
+			$aeDebug = \\\\MarkNotes\\\\Debug::getInstance();
+		"""
+	'aeEvents':
+		'prefix': '$aeEvents'
+		'body': """
+			$aeEvents = \\\\MarkNotes\\\\Events::getInstance();
+		"""
+	'aeFiles':
+		'prefix': '$aeFiles'
+		'body': """
+			$aeFiles = \\\\MarkNotes\\\\Files::getInstance();
+		"""
+	'aeFolders':
+		'prefix': '$aeFolders'
+		'body': """
+			$aeFolders = \\\\MarkNotes\\\\Folders::getInstance();
+		"""
+	'aeFunctions':
+		'prefix': '$aeFunctions'
+		'body': """
+			$aeFunctions = \\\\MarkNotes\\\\Functions::getInstance();
+		"""
+	'aeJSON':
+		'prefix': '$aeJSON'
+		'body': """
+			$aeJSON = \\\\MarkNotes\\\\JSON::getInstance();
+		"""
+	'aeSession':
+		'prefix': '$aeSession'
+		'body': """
+			$aeSession = \\\\MarkNotes\\\\Session::getInstance();
+		"""	
+	'aeSettings':
+		'prefix': '$aeSettings'
+		'body': """
+			$aeSettings = \\\\MarkNotes\\\\Settings::getInstance();
+		"""	
 	'Styled var_dump':
 		'prefix': 'vardumper'
 		'body': """
