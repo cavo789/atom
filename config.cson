@@ -76,6 +76,8 @@
       beautify_on_save: true
       default_beautifier: "JS Beautify"
       end_with_newline: true
+  "atom-ide-ui":
+    use: {}
   "autocomplete-php":
     executablePath: "C:\\Christophe\\Tools\\wamp64\\bin\\php\\php7.0.10\\php.exe"
   "bracket-matcher":
@@ -167,7 +169,7 @@
     deep_indent: true
     development_mode: false
   editor:
-    fontSize: 26
+    fontSize: 28
     invisibles: {}
     preferredLineLength: 70
     showIndentGuide: true
