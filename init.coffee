@@ -16,24 +16,17 @@
 #		* For all text files
 #			* Autoindent the editor's content (only for somes
 #				"grammar" like "text.html.php" (whitelist concept))
-#			* Remove trailing whitespace and tab (i.e. at the end of
-#				the line)
-#			* If a line only contains tabs or spaces and nothing
-#				else, remove these unneeded characters
-#			* Replace spaces blocks (min 3 max 4 consecutive spaces)
-#				by tab
-#			* If there are more than one consecutive empty lines,
-#			just keep one
+#			* Remove trailing whitespace and tab (i.e. at the end of the line)
+#			* If a line only contains tabs or spaces and nothing else, remove
+#				these unneeded characters
+#			* Replace spaces blocks (min 3 max 4 consecutive spaces) by tab
+#			* If there are more than one consecutive empty lines, just keep one
 #
 #		* Only for VBS
-#			* Replace some keywords, solve typo issue
-#				(f.i. replace `WScript.Echo` by `wScript.echo` so
-#				files will be a few normalized)
+#			* Replace some keywords, solve typo issue (f.i. replace `WScript.Echo`
+#				by `wScript.echo` so files will be a few normalized)
 
-targetEolFormat = "\n"
-{Range, Point} = require 'atom'
-
-DDDDatom.workspace.observeTextEditors (editor) ->
+atom.workspace.observeTextEditors (editor) ->
 
 	editor.buffer.onWillSave ->
 
@@ -41,22 +34,7 @@ DDDDatom.workspace.observeTextEditors (editor) ->
 		return if editor.getPath() is atom.config.getUserConfigPath()
 
 		# Inform the user about this script
-		atom.notifications.addInfo 'init.coffee - CAVO linting', icon: 'pencil'
-
-		# Convert CFLF to LF
-		# https://discuss.atom.io/t/can-newlines-be-configured-eg-r-n-or-n/13122/3
-		lastRowIndex = editor.buffer.getLastRow()
-		editor.buffer.transact ->
-
-			atom.notifications.addInfo "init.coffee - CAVO linting - Convert to LF", icon: 'pencil'
-			for rowIndex in [0...lastRowIndex]
-				currEol = editor.buffer.lineEndingForRow rowIndex
-				if currEol isnt targetEolFormat
-					lineEndingRange = new Range(
-						new Point(rowIndex, editor.buffer.lineLengthForRow(rowIndex)),
-						new Point(rowIndex + 1, 0)
-					)
-					editor.buffer.setTextInRange lineEndingRange, targetEolFormat, false
+		#atom.notifications.addInfo 'init.coffee - CAVO linting', icon: 'pencil'
 
 		# For instance text.html.php, source.asp.vb.net, ...
 		currentGrammar = editor.getGrammar()?.scopeName
@@ -67,7 +45,7 @@ DDDDatom.workspace.observeTextEditors (editor) ->
 			msg = new String("AutoIndent ")
 			msg = msg.concat(currentGrammar)
 			#atom.notifications.addInfo msg, icon: 'pencil'
-			editor.autoIndentBufferRows 0, editor.getBuffer().getLineCount() - 1
+			#editor.autoIndentBufferRows 0, editor.getBuffer().getLineCount() - 1
 
 		# First, mark the start position for 'undo'
 		_checkpoint = editor.createCheckpoint()
@@ -75,8 +53,8 @@ DDDDatom.workspace.observeTextEditors (editor) ->
 		# START ---------------------------------------
 		# From here, we'll replace somes patterns
 
-		# Remove trailing whitespace and tab (i.e. at the end of
-		# the line) https://stackoverflow.com/a/9532388
+		# Remove trailing whitespace and tab (i.e. at the end of the line)
+		# https://stackoverflow.com/a/9532388
 		_regex = /[ \t]+$/gm
 		editor.scan _regex, (match) -> match.replace('')
 
@@ -85,24 +63,22 @@ DDDDatom.workspace.observeTextEditors (editor) ->
 		_regex = /^[ |\t]*[\n\r]*$/gm
 		editor.scan _regex, (match) -> match.replace('')
 
-		# Replace spaces blocks (min 3 max 4 consecutive spaces) by
-		# tab
+		# Replace spaces blocks (min 3 max 4 consecutive spaces) by tab
 		_regex = / {3,4}/gm
 		editor.scan _regex, (match) -> match.replace('\t')
 
-		# If there are more than one consecutive empty lines
-		# (having or not tabs), just keep one
+		# If there are more than one consecutive empty lines (having or not tabs),
+		# just keep one
 		_regex = /(\n(\t*)){3,}/m
 		editor.scan _regex, (match) -> match.replace(match.match[0].replace(_regex,'\n\n$2'))
 
-		# ---------------------------------------------------------
+		# ---------------------------------------------------------------------------
 		# Specific for .vbs files
 		if path.extname(editor.getPath()) is ".vbs"
 			# Force .vbs files to be recognized as VB.Net source files
 			editor.setGrammar(atom.grammars.grammarForScopeName('source.asp.vb.net'))
 
-			# Correct typo (f.i. replace WScript.Echo by, the
-			# normalized, wScript.echo)
+			# Correct typo (f.i. replace WScript.Echo by, the normalized, wScript.echo)
 			editor.scan(/wscript\.echo/gmi, (match) -> match.replace('wScript.echo'))
 			editor.scan(/wscript\.quit/gmi, (match) -> match.replace('wScript.quit'))
 
