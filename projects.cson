@@ -1,0 +1,83 @@
+[
+	{
+		title: "aeSecure Firewall"
+		group: "Private"
+		paths: [
+			"C:\\Christophe\\Repository\\aesecure-firewall\\_src"
+		]
+		icon: "icon-chevron-right"
+		devMode: false
+	}
+	{
+		title: "aeSecure Scanner"
+		group: "Private"
+		paths: [
+			"C:\\Christophe\\Repository\\aeSecure_Scan\\aesecure-scanner"
+		]
+		icon: "icon-chevron-right"
+		devMode: false
+	}
+	{
+		title: "Joomla free"
+		group: "Private"
+		paths: [
+			"C:\\Christophe\\Repository\\joomla_free"
+		]
+		icon: "icon-chevron-right"
+		devMode: false
+	}
+	{
+		title: "Marknotes"
+		group: "Private"
+		paths: [
+			"C:\\Christophe\\Repository\\markdown\\src"
+		]
+		icon: "icon-chevron-right"
+		devMode: false
+	}
+	{
+		title: "Marknotes_Install"
+		group: "Private"
+		paths: [
+			"C:\\Christophe\\Repository\\marknotes_install"
+		]
+		icon: "icon-chevron-right"
+		devMode: false
+	}
+	{
+		title: "Marknotes Wiki"
+		group: "Private"
+		paths: [
+			"C:\\Christophe\\Repository\\markdown.wiki"
+		]
+		icon: "icon-chevron-right"
+		devMode: false
+	}
+	{
+		title: "Notes"
+		group: "Private"
+		paths: [
+			"C:\\Christophe\\Repository\\notes"
+		]
+		icon: "icon-chevron-right"
+		devMode: false
+	}
+	{
+		title: "Notes_PersoPoint_Only"
+		group: "SPF"
+		paths: [
+			"C:\\Christophe\\Repository\\notes\\docs\\SPF\\PersoPoint"
+		]
+		icon: "icon-chevron-right"
+		devMode: false
+	}
+	{
+		title: "vbs_scripts"
+		group: "Private"
+		paths: [
+			"C:\\Christophe\\Repository\\vbs_scripts"
+		]
+		icon: "icon-chevron-right"
+		devMode: false
+	}
+]

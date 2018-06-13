@@ -57,17 +57,20 @@
 		'prefix': '$aeSession'
 		'body': """
 			$aeSession = \\\\MarkNotes\\\\Session::getInstance();
-		"""	
+		"""
 	'aeSettings':
 		'prefix': '$aeSettings'
 		'body': """
 			$aeSettings = \\\\MarkNotes\\\\Settings::getInstance();
-		"""	
+		"""
 	'Styled var_dump':
 		'prefix': 'vardumper'
 		'body': """
 			/*<!-- build:debug -->*/
-			die("<pre style=\'background-color:yellow;\'>".__FILE__." - ".__LINE__." ".print_r($1,  true)."</pre>");
+			die("<pre style=\'background-color:yellow;\'>".
+			__FILE__." - ".__LINE__." ".
+			print_r($1, true).
+			"</pre>");
 			/*<!-- endbuild -->*/
 		"""
 	'Styled line':
@@ -96,17 +99,23 @@
 
 > Quick TD;LR
 
-Description
-
 ## Table of Contents
 
+- [Description](#description)
 - [Install](#install)
 - [Usage](#usage)
+- [Author](#author)
 - [License](#license)
+
+## Description
 
 ## Install
 
 ## Usage
+
+## Author
+
+Christophe Avonture
 
 ## Contribute
 
@@ -119,6 +128,12 @@ PRs not accepted.
 	'Image Link':
 		'prefix': 'img'
 		'body': '![$1](%URL%.images/$1)'
+	'Include':
+		'prefix': 'INC'
+		'body': '%INCLUDE folder/*.md%'
+	'Table of content':
+		'prefix': 'TOC'
+		'body': '%TOC_6%'
 	'Hyperlink':
 		'prefix': 'link'
 		'body': '[$1]($2)'
